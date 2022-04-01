@@ -11,7 +11,7 @@ import SwiftUI
 struct ParkDaddyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartPage()
         }
     }
 }
