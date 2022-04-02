@@ -69,7 +69,7 @@ struct Tutorial_1: View {
                         .frame(maxHeight: 100, alignment: .bottom)
                     
                 })
-                ProgressView(value: 0.25).tint(.red).frame(maxHeight: 100, alignment: .bottom)
+                ProgressView(value: 0.33).tint(.red).frame(maxHeight: 100, alignment: .bottom)
                 
         }
     }
@@ -105,7 +105,7 @@ struct Tutorial_2: View {
                         .frame(maxHeight: 100, alignment: .bottom)
                     
                 })
-                ProgressView(value: 0.5).tint(.red).frame(maxHeight: 100, alignment: .bottom)
+                ProgressView(value: 0.66).tint(.red).frame(maxHeight: 100, alignment: .bottom)
                 
 
         }
@@ -156,6 +156,7 @@ struct HomePage: View {
 
                 Spacer()
                 
+                //if statement of good or bad sign will go here
                 
                 NavigationLink( destination: CameraView(), label: {
                     Image("Park")
@@ -163,16 +164,10 @@ struct HomePage: View {
                         .frame(width: 302, height: 297)
                     
                 }) . navigationBarBackButtonHidden(true)
-//                Button {
-//
-//                } label: {
-//                    Image("Park")
-//                        .resizable()
-//                        .frame(width: 302, height: 297)
-//                }
+
                
                 Text("Tap to Start Scanning")
-                    .font(.callout)
+                    .font(.headline)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
                     .padding()
@@ -180,6 +175,45 @@ struct HomePage: View {
                 
         }
     }
+}
+    //This should not be a view, but will be temporarily placed here until the logic is implementer for the capturing the parking sign
+struct GoodView: View {
+    var body : some View {
+        VStack{
+            Image("Good")
+                .resizable()
+                .frame(width: 250, height: 220)
+            
+            Text("Safe to park!")
+                .font(.title2)
+                .fontWeight(.semibold)
+                .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
+                .padding()
+                
+        }
+        
+    }
+}
+
+
+//This should not be a view, but will be temporarily placed here until the logic is implementer for the capturing the parking sign
+struct BadView: View {
+    var body : some View {
+        VStack{
+            Image("Bad")
+                .resizable()
+                .frame(width: 250, height: 220)
+           
+            Text("Parking spot not available!")
+                .font(.title2)
+                .fontWeight(.semibold)
+                .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
+                .padding()
+
+        }
+        
+    }
+}
 
 
 
@@ -192,8 +226,11 @@ struct ContentView_Previews: PreviewProvider {
             Tutorial_3()
             HomePage()
             CameraView()
+            GoodView()
+            BadView()
             
         }
     }
 }
-}
+
+
