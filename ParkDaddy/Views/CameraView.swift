@@ -31,7 +31,9 @@ struct CameraView: UIViewControllerRepresentable {
 }
 
 extension CameraView {
+    
     class Coordinator : NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        
         var parent: CameraView
         
         init(_ parent: CameraView) {
