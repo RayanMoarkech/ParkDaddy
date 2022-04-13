@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ParkDaddyApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            StartPage()
+            StartView()
         }
     }
 }
