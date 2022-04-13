@@ -10,10 +10,12 @@ import UIKit
 import AVFoundation
 
 struct HomeView: View {
+    
     var body: some View {
 
             VStack {
-                    Color(red: 0.999, green: 0.272, blue: 0.17).frame(height: 100, alignment: .top).ignoresSafeArea()
+                
+                Color(red: 0.999, green: 0.272, blue: 0.17).frame(height: 100, alignment: .top).ignoresSafeArea()
 
                 Spacer()
                 
@@ -25,14 +27,12 @@ struct HomeView: View {
                         .frame(width: 302, height: 297)
                     
                 }) . navigationBarBackButtonHidden(true)
-
                
                 Text("Tap to Start Scanning")
                     .font(.headline)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
                     .padding()
-                
                 
         }
     }
