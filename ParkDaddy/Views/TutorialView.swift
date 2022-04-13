@@ -10,12 +10,15 @@ import UIKit
 import AVFoundation
 
 struct FirstTutorialView: View {
+    
     var body: some View {
                         
             VStack {
+                
                 Image("Car")
                     .resizable()
                     .frame(width: 319, height: 225)
+                
                 Text("Just The Right Spot")
                     .font(.callout)
                     .fontWeight(.semibold)
@@ -27,7 +30,6 @@ struct FirstTutorialView: View {
                     .fontWeight(.light)
                     .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.231, green: 0.256, blue: 0.294)/*@END_MENU_TOKEN@*/)
                     .padding()
-            
                 
                 NavigationLink( destination: SecondTutorialView(), label: {
                     Text("Next →")
@@ -36,8 +38,8 @@ struct FirstTutorialView: View {
                         .foregroundColor(Color.white)
                         .cornerRadius(10)
                         .frame(maxHeight: 100, alignment: .bottom)
-                    
                 })
+                
                 ProgressView(value: 0.33).tint(.red).frame(maxHeight: 100, alignment: .bottom)
                 
         }
@@ -46,12 +48,15 @@ struct FirstTutorialView: View {
 
 
 struct SecondTutorialView: View {
+    
     var body: some View {
 
             VStack {
+                
                 Image("Map")
                     .resizable()
                     .frame(width: 319, height: 225)
+                
                 Text("Quick Navigation")
                     .font(.callout)
                     .fontWeight(.semibold)
@@ -64,7 +69,6 @@ struct SecondTutorialView: View {
                     .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
                     .padding()
                 
-                
                 NavigationLink( destination: ThirdTutorialView(), label: {
                     Text("Next →")
                         .padding()
@@ -74,6 +78,7 @@ struct SecondTutorialView: View {
                         .frame(maxHeight: 100, alignment: .bottom)
                     
                 })
+                
                 ProgressView(value: 0.66).tint(.red).frame(maxHeight: 100, alignment: .bottom)
                 
         }
@@ -81,12 +86,15 @@ struct SecondTutorialView: View {
 }
 
 struct ThirdTutorialView: View {
+    
     var body: some View {
 
             VStack {
+                
                 Image("Meter")
                     .resizable()
                     .frame(width: 319, height: 225)
+                
                 Text("Easy Scanning")
                     .font(.callout)
                     .fontWeight(.semibold)
@@ -99,7 +107,6 @@ struct ThirdTutorialView: View {
                     .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
                     .padding()
                 
-                
                 NavigationLink( destination: HomeView(), label: {
                     Text("Get Started")
                         .padding()
@@ -109,6 +116,7 @@ struct ThirdTutorialView: View {
                         .frame(maxHeight: 100, alignment: .bottom)
                     
                 })
+                
                 ProgressView(value: 1).tint(.red).frame(maxHeight: 100, alignment: .bottom)
                 
         }
