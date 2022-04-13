@@ -11,8 +11,11 @@ import AVFoundation
 
 // This should not be a view, but will be temporarily placed here until the logic is implementer for the capturing the parking sign
 struct GoodResultView: View {
+    
     var body : some View {
+        
         VStack{
+            
             Image("Good")
                 .resizable()
                 .frame(width: 250, height: 220)
@@ -24,14 +27,16 @@ struct GoodResultView: View {
                 .padding()
                 
         }
-        
     }
 }
 
 // This should not be a view, but will be temporarily placed here until the logic is implementer for the capturing the parking sign
 struct BadResultView: View {
+    
     var body : some View {
+        
         VStack{
+            
             Image("Bad")
                 .resizable()
                 .frame(width: 250, height: 220)
@@ -43,7 +48,6 @@ struct BadResultView: View {
                 .padding()
 
         }
-        
     }
 }
 
