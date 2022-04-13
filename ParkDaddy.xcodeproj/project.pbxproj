@@ -14,6 +14,7 @@
 		0B748BAA27F3B1760047166F /* ParkDaddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B748BA927F3B1760047166F /* ParkDaddyTests.swift */; };
 		0B748BB427F3B1760047166F /* ParkDaddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B748BB327F3B1760047166F /* ParkDaddyUITests.swift */; };
 		0B748BB627F3B1760047166F /* ParkDaddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B748BB527F3B1760047166F /* ParkDaddyUITestsLaunchTests.swift */; };
+		0BF163612807395F003928CF /* ParkingSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF163602807395F003928CF /* ParkingSign.swift */; };
 		37F6DEF127F6CEAA00253A3A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DEF027F6CEAA00253A3A /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		0B748BAF27F3B1760047166F /* ParkDaddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkDaddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B748BB327F3B1760047166F /* ParkDaddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDaddyUITests.swift; sourceTree = "<group>"; };
 		0B748BB527F3B1760047166F /* ParkDaddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDaddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BF163602807395F003928CF /* ParkingSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSign.swift; sourceTree = "<group>"; };
 		37F6DEED27F6AA3500253A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		37F6DEF027F6CEAA00253A3A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				0B748B9C27F3B1760047166F /* Assets.xcassets */,
 				0B748B9E27F3B1760047166F /* Preview Content */,
 				37F6DEF027F6CEAA00253A3A /* CameraView.swift */,
+				0BF163602807395F003928CF /* ParkingSign.swift */,
 			);
 			path = ParkDaddy;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F6DEF127F6CEAA00253A3A /* CameraView.swift in Sources */,
+				0BF163612807395F003928CF /* ParkingSign.swift in Sources */,
 				0B748B9B27F3B1730047166F /* ContentView.swift in Sources */,
 				0B748B9927F3B1730047166F /* ParkDaddyApp.swift in Sources */,
 			);
