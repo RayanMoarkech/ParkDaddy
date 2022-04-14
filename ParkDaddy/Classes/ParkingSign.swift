@@ -36,12 +36,12 @@ class ParkingSign {
         }
         
         // Check minutes
-        let startMinutes = (Calendar.current.component(.minute, from: startTime))
-        let currentMinutes = (Calendar.current.component(.minute, from: time))
-        let endMinutes = (Calendar.current.component(.minute, from: endTime))
-        if (currentMinutes < startMinutes || currentMinutes > endMinutes) {
-            return false;
-        }
+//        let startMinutes = (Calendar.current.component(.minute, from: startTime))
+//        let currentMinutes = (Calendar.current.component(.minute, from: time))
+//        let endMinutes = (Calendar.current.component(.minute, from: endTime))
+//        if (currentMinutes < startMinutes || currentMinutes > endMinutes) {
+//            return false;
+//        }
         
         return true;
     }
