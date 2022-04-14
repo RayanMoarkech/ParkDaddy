@@ -32,13 +32,6 @@ struct HomeView: View {
 
             Spacer()
             
-//                NavigationLink(destination: CameraView(), label: {
-//                    Image("Park")
-//                        .resizable()
-//                        .frame(width: 302, height: 297)
-//                })
-//                .navigationBarBackButtonHidden(true)
-            
             Button(action: {
                 self.sourceType = .camera
                 self.isImagePickerDisplay.toggle()
