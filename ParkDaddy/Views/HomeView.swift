@@ -67,8 +67,10 @@ struct HomeView: View {
 //        if self.selectedImage != nil {
             var startTime = DateComponents()
             startTime.hour = 8
+            startTime.minute = 0;
             var endTime = DateComponents()
             endTime.hour = 18
+            endTime.minute = 59;
             let parkingSign = ParkingSign(startTime: Calendar.current.date(from: startTime)!, endTime: Calendar.current.date(from: endTime)!)
             if parkingSign.isAllowed(time: Date()) {
                 self.goToGoodResultScreen.toggle()
