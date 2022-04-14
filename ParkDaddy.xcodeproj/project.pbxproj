@@ -19,6 +19,7 @@
 		0BF1636728079153003928CF /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF1636628079153003928CF /* TutorialView.swift */; };
 		0BF163692807920A003928CF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF163682807920A003928CF /* HomeView.swift */; };
 		0BF1636B2807929C003928CF /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF1636A2807929C003928CF /* CameraView.swift */; };
+		0BF1636D28079C75003928CF /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF1636C28079C75003928CF /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0BF1636628079153003928CF /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		0BF163682807920A003928CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0BF1636A2807929C003928CF /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		0BF1636C28079C75003928CF /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		37F6DEED27F6AA3500253A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF1636328078DB6003928CF /* Views */,
-				0BF1636228078DA2003928CF /* Models */,
+				0BF1636228078DA2003928CF /* Classes */,
 				37F6DEED27F6AA3500253A3A /* Info.plist */,
 				0B748B9827F3B1730047166F /* ParkDaddyApp.swift */,
 				0B748B9C27F3B1760047166F /* Assets.xcassets */,
@@ -140,12 +142,12 @@
 			path = ParkDaddyUITests;
 			sourceTree = "<group>";
 		};
-		0BF1636228078DA2003928CF /* Models */ = {
+		0BF1636228078DA2003928CF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				0BF163602807395F003928CF /* ParkingSign.swift */,
 			);
-			path = Models;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		0BF1636328078DB6003928CF /* Views */ = {
@@ -154,8 +156,9 @@
 				0BF1636428078F8C003928CF /* StartView.swift */,
 				0BF1636628079153003928CF /* TutorialView.swift */,
 				0BF163682807920A003928CF /* HomeView.swift */,
-				0B748B9A27F3B1730047166F /* ResultView.swift */,
 				0BF1636A2807929C003928CF /* CameraView.swift */,
+				0BF1636C28079C75003928CF /* ImagePickerView.swift */,
+				0B748B9A27F3B1730047166F /* ResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				0BF163612807395F003928CF /* ParkingSign.swift in Sources */,
 				0BF1636728079153003928CF /* TutorialView.swift in Sources */,
 				0B748B9B27F3B1730047166F /* ResultView.swift in Sources */,
+				0BF1636D28079C75003928CF /* ImagePickerView.swift in Sources */,
 				0B748B9927F3B1730047166F /* ParkDaddyApp.swift in Sources */,
 				0BF1636528078F8C003928CF /* StartView.swift in Sources */,
 				0BF1636B2807929C003928CF /* CameraView.swift in Sources */,
@@ -461,13 +465,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ParkDaddy/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ParkDaddy would like to access your camera";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs the camera to capture the parking signs";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs the camera to capture the parking signs";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,13 +501,15 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ParkDaddy/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ParkDaddy would like to access your camera";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs the camera to capture the parking signs";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs the camera to capture the parking signs";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
