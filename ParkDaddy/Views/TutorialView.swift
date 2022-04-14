@@ -28,7 +28,7 @@ struct FirstTutorialView: View {
                 Text("Parking tickets are a thing of the past")
                     .font(.callout)
                     .fontWeight(.light)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.231, green: 0.256, blue: 0.294)/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
                     .padding()
                 
                 NavigationLink( destination: SecondTutorialView(), label: {
@@ -45,7 +45,6 @@ struct FirstTutorialView: View {
         }
     }
 }
-
 
 struct SecondTutorialView: View {
     
@@ -107,7 +106,7 @@ struct ThirdTutorialView: View {
                     .foregroundColor(Color(red: 0.231, green: 0.256, blue: 0.294))
                     .padding()
                 
-                NavigationLink( destination: HomeView(), label: {
+                NavigationLink(destination: HomeView(), label: {
                     Text("Get Started")
                         .padding()
                         .background(Color(red: 0.999, green: 0.272, blue: 0.17))
