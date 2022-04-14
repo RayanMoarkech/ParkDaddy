@@ -14,7 +14,7 @@ struct GoodResultView: View {
     
     var body : some View {
         
-        VStack{
+        VStack {
             
             Image("Good")
                 .resizable()
@@ -54,7 +54,6 @@ struct BadResultView: View {
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CameraView()
             GoodResultView()
             BadResultView()
         }
