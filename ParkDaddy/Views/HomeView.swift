@@ -55,23 +55,23 @@ struct HomeView: View {
                 .padding()
             
         }
-        .sheet(isPresented: self.$isImagePickerDisplay) {
+        .sheet(isPresented: self.$isImagePickerDisplay, onDismiss: {
+            print("onDismiss")
+            self.switchView()
+        }) {
             ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
                 .onDisappear {
-                    print("Dismiss")
-                    self.switchView()
+                    print("onDisappear")
+//                    self.switchView()
                 }
         
         }
         .navigationBarBackButtonHidden(true)
-        .navigationTitle("ParkDaddy")
         
     }
     
     func switchView() {
-        print("INNNN")
-        if self.selectedImage != nil {
-            print("INNNN if");
+//        if self.selectedImage != nil {
             var startTime = DateComponents()
             startTime.hour = 8
             var endTime = DateComponents()
@@ -82,7 +82,7 @@ struct HomeView: View {
             } else {
                 self.goToBadResultScreen.toggle()
             }
-        }
+//        }
     }
 }
 struct HomeView_Previews: PreviewProvider {
