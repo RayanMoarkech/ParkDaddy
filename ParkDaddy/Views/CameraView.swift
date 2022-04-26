@@ -2,13 +2,12 @@
 //  CameraView.swift
 //  ParkDaddy
 //
-//  Created by Lujain Khalaf on 2022-04-01.
+//  Created by Rayan Moarkech on 2022-04-13.
 //
 
-import Foundation
-
-import UIKit
 import SwiftUI
+import UIKit
+import AVFoundation
 
 struct CameraView: UIViewControllerRepresentable {
     
@@ -32,7 +31,9 @@ struct CameraView: UIViewControllerRepresentable {
 }
 
 extension CameraView {
+    
     class Coordinator : NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        
         var parent: CameraView
         
         init(_ parent: CameraView) {
@@ -48,5 +49,11 @@ extension CameraView {
                 UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
             }
         }
+    }
+}
+
+struct CameraView_Previews: PreviewProvider {
+    static var previews: some View {
+        CameraView()
     }
 }
