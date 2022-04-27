@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/RayanMoarkech/ParkDaddy">
   <img src="./ParkDaddy/Assets.xcassets/ParkDaddy.imageset/ParkDaddy.png" height="128">
-    <h1 align="center">PardDaddy</h1>
+    <h1 align="center">ParkDaddy</h1>
   </a>
 </p>
 
